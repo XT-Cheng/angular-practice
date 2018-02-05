@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy,OnChanges, DoCheck,ChangeDetectorRef } from '@angular/core';
-import { setInterval } from 'timers';
 
 @Component({
   selector: 'app-sub',
@@ -8,7 +7,7 @@ import { setInterval } from 'timers';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SubComponent implements OnInit, OnChanges, DoCheck {
-  protected _property: any;
+  _property: any;
 
   @Input()
   set property(value: any) {
